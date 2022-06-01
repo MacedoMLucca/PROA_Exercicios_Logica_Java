@@ -8,36 +8,36 @@ public class Calculadora {
 		
 		//Primeira mensagem
 		// para fazer a escolha do que vai ser feito
-		int escolha = Integer.parseInt(JOptionPane.showInputDialog("Escolha uma opÁ„o para fazer a conta "+
-														"\n 1 - Soma            2 - SubtraÁ„o"+
-														"\n 3 - MultiplicaÁ„o   4 - Divis„o"));
+		String escolha = JOptionPane.showInputDialog("Escolha uma op√ß√£o para fazer a conta "+
+														"\n S - Soma            T - Subtra√ß√£o"+
+														"\n M - Multiplica√ß√£o   D - Divis√£o");
 		
 		//Segunda mensagem
-		//inserÁao de numeros
+		//inser√ßao de numeros
 		int num1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro numero"));
 		int num2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo numero"));
 	
-		//ultima parte => escolha de qual o peraÁ„o sera respondida
-		if (escolha == 1) {
-			//OperaÁ„o matematica 
+		//ultima parte => escolha de qual o pera√ß√£o sera respondida
+		if (escolha.equals("s")) {
+			//Opera√ß√£o matematica 
 			int soma = num1 + num2;
 			//Forma de aparecer na tela 
-			JOptionPane.showMessageDialog(null,soma);
-		} else if (escolha == 2) {
-			//OperaÁ„o matematica 
+			JOptionPane.showMessageDialog(null,"A soma de "+ num1 + " + "+num2+" √©: "+soma);
+		} else if (escolha.equals("t")) {
+			//Opera√ß√£o matematica 
 			int subt = num1 - num2;
 			//Forma de aparecer na tela
-			JOptionPane.showMessageDialog(null,subt);
-		}else if (escolha == 3) {
-			//OperaÁ„o matematica 
+			JOptionPane.showMessageDialog(null,"A subtra√ß√£o de "+ num1 + " - "+num2+" √©: "+subt);
+		}else if (escolha.equals("m")) {
+			//Opera√ß√£o matematica 
 			int mult = num1 * num2;
 			//Forma de aparecer na tela
-			JOptionPane.showMessageDialog(null,mult);
-		}else if (escolha == 4) {
-			//OperaÁ„o matematica 
+			JOptionPane.showMessageDialog(null,"A multiplica√ß√£o de "+ num1 + " x "+num2+" √©: "+mult);
+		}else if (escolha.equals("d")) {
+			//Opera√ß√£o matematica 
 			int div = num1 / num2;
 			//Forma de aparecer na tela
-			JOptionPane.showMessageDialog(null,div);
+			JOptionPane.showMessageDialog(null,"A divis√£o de "+ num1 + " / "+num2+" √©: "+div);
 		}
 		
 	}
