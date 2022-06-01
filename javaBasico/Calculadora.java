@@ -8,36 +8,36 @@ public class Calculadora {
 		
 		//Primeira mensagem
 		// para fazer a escolha do que vai ser feito
-		String escolha = JOptionPane.showInputDialog("Escolha uma opÃ§Ã£o para fazer a conta "+
-														"\n S - Soma            T - SubtraÃ§Ã£o"+
-														"\n M - MultiplicaÃ§Ã£o   D - DivisÃ£o");
+		String escolha = JOptionPane.showInputDialog("Escolha uma opção para fazer a conta "+
+														"\n S - Soma            T - Subtração"+
+														"\n M - Multiplicação   D - Divisão");
 		
 		//Segunda mensagem
-		//inserÃ§ao de numeros
+		//inserçao de numeros
 		int num1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro numero"));
 		int num2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo numero"));
 	
-		//ultima parte => escolha de qual o peraÃ§Ã£o sera respondida
+		//ultima parte => escolha de qual o peração sera respondida
 		if (escolha.equals("s")) {
-			//OperaÃ§Ã£o matematica 
+			//Operação matematica 
 			int soma = num1 + num2;
 			//Forma de aparecer na tela 
-			JOptionPane.showMessageDialog(null,"A soma de "+ num1 + " + "+num2+" Ã©: "+soma);
+			JOptionPane.showMessageDialog(null,"A soma de "+ num1 + " + "+num2+" é: "+soma);
 		} else if (escolha.equals("t")) {
-			//OperaÃ§Ã£o matematica 
+			//Operação matematica 
 			int subt = num1 - num2;
 			//Forma de aparecer na tela
-			JOptionPane.showMessageDialog(null,"A subtraÃ§Ã£o de "+ num1 + " - "+num2+" Ã©: "+subt);
+			JOptionPane.showMessageDialog(null,"A subtração de "+ num1 + " - "+num2+" é: "+subt);
 		}else if (escolha.equals("m")) {
-			//OperaÃ§Ã£o matematica 
+			//Operação matematica 
 			int mult = num1 * num2;
 			//Forma de aparecer na tela
-			JOptionPane.showMessageDialog(null,"A multiplicaÃ§Ã£o de "+ num1 + " x "+num2+" Ã©: "+mult);
+			JOptionPane.showMessageDialog(null,"A multiplicação de "+ num1 + " x "+num2+" é: "+mult);
 		}else if (escolha.equals("d")) {
-			//OperaÃ§Ã£o matematica 
+			//Operação matematica 
 			int div = num1 / num2;
 			//Forma de aparecer na tela
-			JOptionPane.showMessageDialog(null,"A divisÃ£o de "+ num1 + " / "+num2+" Ã©: "+div);
+			JOptionPane.showMessageDialog(null,"A divisão de "+ num1 + " / "+num2+" é: "+div);
 		}
 		
 	}
