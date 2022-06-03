@@ -28,10 +28,7 @@ public class Exercicio9 {
 	valRea = valReajuste*salAtual;
     salFinal = salAtual + valRea;
 	
-	System.out.println("Com um reajuste de "+valRea+ " reais seu salario passara a ser de " + salFinal +" reais");
-	
-	
-	
+	System.out.println("Com um reajuste de "+valRea+ " reais seu salario passara a ser de " + salFinal +" reais");	
 	sc.close();
 	
 	}
