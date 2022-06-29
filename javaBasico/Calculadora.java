@@ -38,8 +38,6 @@ public class Calculadora {
 			int div = num1 / num2;
 			//Forma de aparecer na tela
 			JOptionPane.showMessageDialog(null,"A divisão de "+ num1 + " / "+num2+" é: "+div);
-		}
-		
-	}
-		
+		}	
+	}	
 }

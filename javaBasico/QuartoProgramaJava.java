@@ -15,6 +15,7 @@ public class QuartoProgramaJava {
 		int numero2 = sc.nextInt();
 		System.out.println("A soma é "+numero+numero2);
 
+		sc.close();
 	}
 
 }
